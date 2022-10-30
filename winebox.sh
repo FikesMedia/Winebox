@@ -102,7 +102,7 @@ if [ $1 == "install" ]
 then
   # Get Confirmation
   while true; do
-    read -p "Do you want to proceed? (yes/no) " yn
+    read -p "Do you want to proceed with installation? (yes/no) " yn
     case $yn in 
       yes ) echo "Installing Winbox";
         installRequirements
