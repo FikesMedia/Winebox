@@ -41,7 +41,7 @@ function installWinbox(){
   wget -O $userHome/Applications/Windows/Winbox/winbox64.exe https://mt.lv/winbox64
 
   # Create Icon File
-  wget -O $userHome/Applications/Windows/Winbox/winbox.png https://raw.githubusercontent.com/FikesMedia/Winebox/main/winbox.png?token=GHSAT0AAAAAABZTFB6HW2K4IAIIXFUPPR5IY26TLHQ
+  wget -O $userHome/Applications/Windows/Winbox/winbox.png https://raw.githubusercontent.com/FikesMedia/Winebox/main/winbox.png
 
   # Create Desktop File
   desktopFile="$userHome/Applications/Windows/Winbox/winbox.desktop"
