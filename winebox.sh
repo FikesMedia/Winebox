@@ -100,55 +100,22 @@ fi
 # Install Winbox
 if [ $1 == "install" ]
 then
-  # Get Confirmation
-  while true; do
-    read -p "Do you want to proceed with installation? (yes/no) " yn
-    case $yn in 
-      yes ) echo "Installing Winbox";
-        installRequirements
-        installWinbox
-        confirmationPage Installation
-        break;;
-      no ) echo "Exiting";
-        exit;;
-      * ) echo "Ivalid Response";;
-    esac
-  done
+  installRequirements
+  installWinbox
+  confirmationPage Installation
 fi
 
 # Remove Winbox
 if [ $1 == "remove" ]
 then
-  # Get Confirmation
-  while true; do
-    read -p "Do you want to proceede with removal? (yes/no) " yn
-    case $yn in
-      yes ) echo "Removing Winbox";
-        removeWinbox
-        confirmationPage Removal
-        break;;
-      no ) echo "Exiting";
-        exit;;
-      * ) echo "Invalid Response";;
-    esac
-  done
+  removeWinbox
+  confirmationPage Removal
 fi
 
 
 # Update Winbox
 if [ $1 == "update" ]
 then
-  # Get Confirmation
-  while true; do
-    read -p "Do you want to update? (yes/no) " yn
-    case $yn in
-      yes ) echo "Updating Winbox";
-        updateWinbox
-        confirmationPage Update
-        break;;
-      no ) echo "Exiting";
-        exit;;
-      * ) echo "Invalid Response";;
-    esac
-  done
+  updateWinbox
+  confirmationPage Update
 fi
