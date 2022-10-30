@@ -20,12 +20,12 @@ function installRequirements(){
     # Install Wine64 Fedora
     if command -v dnf &> /dev/null
     then
-      dnf install wine64 -y
+      sudo dnf install wine64 -y
     fi
     # Install Wine64 Ubuntu / Debian
     if command -v apt &> /dev/null
     then
-      apt install wine64 -y
+      sudo apt install wine64 -y
     fi
   fi
 }
